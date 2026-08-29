@@ -309,10 +309,6 @@ wezterm-kit/
 
 见 [docs/排错.md](docs/排错.md)。
 
-## 许可证
-
-MIT
-
 ---
 
 ## 关于作者
@@ -331,3 +327,9 @@ AI 工具与工作流实践者 · GitHub 开源项目作者
 ![大强同学](https://gitee.com/da-qiang-classmate/typora/raw/master/image/未命名的设计（2）.webp)
 
 卡在安装、配置、报错，或想把 AI 接进自己的工作流，可以直接找我。
+
+---
+
+## 许可证
+
+MIT

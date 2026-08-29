@@ -310,10 +310,6 @@ wezterm-kit/
 
 See [docs/排错.md](docs/排错.md) (Chinese).
 
-## License
-
-MIT
-
 ---
 
 ## About the author
@@ -331,3 +327,9 @@ In real-world Windows, AI Agent, Obsidian, and personal-website scenarios, I tur
 ![Derek Zhao](https://gitee.com/da-qiang-classmate/typora/raw/master/image/未命名的设计（2）.webp)
 
 Stuck on install, config, or errors, or want to wire AI into your own workflow? Just reach out.
+
+---
+
+## License
+
+MIT
