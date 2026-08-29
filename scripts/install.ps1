@@ -93,7 +93,6 @@ $AiFlags = @{
     qwen     = ''
     kimi     = ''
     grok     = ''
-    opencode = ''
 }
 
 # 刚装完的程序可能还没进当前会话的 PATH，补几个常见落点
@@ -104,7 +103,6 @@ $AiCliFallback = @{
     codex    = @((Join-Path $env:LOCALAPPDATA 'Programs\OpenAI\Codex\bin\codex.cmd'))
     kimi     = @((Join-Path $env:APPDATA 'npm\kimi.cmd'))
     grok     = @((Join-Path $env:APPDATA 'npm\grok.cmd'))
-    opencode = @((Join-Path $env:APPDATA 'npm\opencode.cmd'))
 }
 
 $WezCfg = Join-Path $HOME '.wezterm.lua'
@@ -422,7 +420,7 @@ if ($ProxyPort -gt 0) {
 
 Write-Step '检测已安装的 AI CLI'
 $snips = @()
-foreach ($cli in @('claude', 'qwen', 'codex', 'gemini', 'kimi', 'grok', 'opencode')) {
+foreach ($cli in @('claude', 'qwen', 'codex', 'gemini', 'kimi', 'grok')) {
     if (Test-Cli $cli) {
         $flag = ''
         if ($AiCliAutoAccept) { $flag = $AiFlags[$cli] }

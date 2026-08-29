@@ -253,11 +253,8 @@ AI 会问你三个问题，然后一步步装完。你只需要回答问题，�
 | `gm` | Gemini CLI |
 | `km` | Kimi CLI |
 | `gr` | Grok（Grok Build） |
-| `op` | OpenCode |
 
 以后装了新的 AI CLI，重跑一次 `install.ps1`，新命令会自动补上。
-
-> **关于 `op` 的提醒**：`op` 同时也是 1Password 的命令行命令。如果你装了 1Password，在 Nushell 里定义 `op` 会把它盖掉。要是碍事，去生成后的 `config.nu` 里把别名改掉就行。
 
 ### 背景图
 

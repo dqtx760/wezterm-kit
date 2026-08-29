@@ -254,11 +254,8 @@ At install time the script scans for AI command-line tools already on the machin
 | `gm` | Gemini CLI |
 | `km` | Kimi CLI |
 | `gr` | Grok (Grok Build) |
-| `op` | OpenCode |
 
 Install a new AI CLI later and re-run `install.ps1` — the new shortcut is added automatically.
-
-> **Heads-up on `op`**: `op` is also the 1Password CLI command. If 1Password is installed, defining `op` here shadows it inside Nushell. Rename the alias in the generated `config.nu` if that gets in your way.
 
 ### Background image
 

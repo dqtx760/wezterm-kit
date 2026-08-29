@@ -105,7 +105,7 @@ powershell -ExecutionPolicy Bypass -File scripts\verify.ps1
 - 右键粘贴，`Shift+右键` 复制
 - 去掉了标题栏，用 `Ctrl+左键拖拽` 移动窗口
 - 资源管理器里右键有「Open WezTerm here」，从那里打开会直接落在当前目录
-- 检测到的 AI CLI 会自动生成快捷命令：`cc` / `qw` / `cx` / `gm` / `km` / `gr` / `op`，启动时会把标签页标题改成对应名字
+- 检测到的 AI CLI 会自动生成快捷命令：`cc` / `qw` / `cx` / `gm` / `km` / `gr`，启动时会把标签页标题改成对应名字
 
 ## 出问题看这里
 
