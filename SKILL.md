@@ -37,7 +37,7 @@ description: 在 Windows 上一键装好 WezTerm 终端环境（WezTerm + Nushel
    （启用背景时窗口上内边距自动设成 30 给图让位，不启用是 2）
 2. **要不要配代理？** 要的话问端口（常见 7890 / 10809）。不传就完全不写代理配置。
 3. **要不要给 AI CLI 开自动确认？** 只有在用户明确要求时才加 `-AiCliAutoAccept`。
-   默认是关的——这个开关会让 `cc`/`cx`/`gm` 跳过所有权限确认，等于把本机执行权交给模型。
+   默认是关的——这个开关会让带跳过确认参数的命令（如 `cc`/`cx`/`gm`）跳过所有权限确认，等于把本机执行权交给模型。
 
 用户嫌麻烦就说「先来套默认的」，直接跑无参数版本，回头想改随时重跑。
 
@@ -84,7 +84,7 @@ powershell -ExecutionPolicy Bypass -File scripts\verify.ps1
 | `-ProxyPort <端口>` | 写入 http/https 代理 | 不写代理 |
 | `-FontName <名字>` | 终端字体 | `CaskaydiaCove Nerd Font` |
 | `-FontSize <数字>` | 字号 | 14 |
-| `-AiCliAutoAccept` | 给 cc/cx/gm 加跳过确认的参数 | 关 |
+| `-AiCliAutoAccept` | 给 AI CLI（cc/cx/gm 等带跳过确认参数的）加跳过确认的参数 | 关 |
 | `-SkipApps` | 不装软件，只写配置和字体 | 关 |
 | `-SkipFonts` | 不装字体 | 关 |
 | `-WhatIf` | 预演，不改动任何东西 | 关 |
@@ -105,7 +105,7 @@ powershell -ExecutionPolicy Bypass -File scripts\verify.ps1
 - 右键粘贴，`Shift+右键` 复制
 - 去掉了标题栏，用 `Ctrl+左键拖拽` 移动窗口
 - 资源管理器里右键有「Open WezTerm here」，从那里打开会直接落在当前目录
-- 检测到的 AI CLI 会自动生成快捷命令：`cc` / `qw` / `cx` / `gm`，启动时会把标签页标题改成对应名字
+- 检测到的 AI CLI 会自动生成快捷命令：`cc` / `qw` / `cx` / `gm` / `km` / `gr` / `op`，启动时会把标签页标题改成对应名字
 
 ## 出问题看这里
 

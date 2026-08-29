@@ -87,18 +87,24 @@ if ($NoBackground) {
 # AI CLI 的「跳过所有确认」参数。
 # qwen 0.21.8 没有这个参数，留空（老版本 qwen 用的 -y 早已失效，会被静默忽略）。
 $AiFlags = @{
-    claude = '--dangerously-skip-permissions'
-    codex  = '--dangerously-bypass-approvals-and-sandbox'
-    gemini = '-y'
-    qwen   = ''
+    claude   = '--dangerously-skip-permissions'
+    codex    = '--dangerously-bypass-approvals-and-sandbox'
+    gemini   = '-y'
+    qwen     = ''
+    kimi     = ''
+    grok     = ''
+    opencode = ''
 }
 
 # 刚装完的程序可能还没进当前会话的 PATH，补几个常见落点
 $AiCliFallback = @{
-    claude = @((Join-Path $env:APPDATA 'npm\claude.cmd'))
-    qwen   = @((Join-Path $env:APPDATA 'npm\qwen.cmd'))
-    gemini = @((Join-Path $env:APPDATA 'npm\gemini.cmd'))
-    codex  = @((Join-Path $env:LOCALAPPDATA 'Programs\OpenAI\Codex\bin\codex.cmd'))
+    claude   = @((Join-Path $env:APPDATA 'npm\claude.cmd'))
+    qwen     = @((Join-Path $env:APPDATA 'npm\qwen.cmd'))
+    gemini   = @((Join-Path $env:APPDATA 'npm\gemini.cmd'))
+    codex    = @((Join-Path $env:LOCALAPPDATA 'Programs\OpenAI\Codex\bin\codex.cmd'))
+    kimi     = @((Join-Path $env:APPDATA 'npm\kimi.cmd'))
+    grok     = @((Join-Path $env:APPDATA 'npm\grok.cmd'))
+    opencode = @((Join-Path $env:APPDATA 'npm\opencode.cmd'))
 }
 
 $WezCfg = Join-Path $HOME '.wezterm.lua'
@@ -416,7 +422,7 @@ if ($ProxyPort -gt 0) {
 
 Write-Step '检测已安装的 AI CLI'
 $snips = @()
-foreach ($cli in @('claude', 'qwen', 'codex', 'gemini')) {
+foreach ($cli in @('claude', 'qwen', 'codex', 'gemini', 'kimi', 'grok', 'opencode')) {
     if (Test-Cli $cli) {
         $flag = ''
         if ($AiCliAutoAccept) { $flag = $AiFlags[$cli] }
@@ -443,6 +449,6 @@ Write-Host '  1. 完全退出 WezTerm 再重开（字体和配色要重启才生
 Write-Host "  2. 跑验收： powershell -File `"$PSScriptRoot\verify.ps1`"" -ForegroundColor White
 if ($AiCliAutoAccept) {
     Write-Host ''
-    Write-Warn '你开了 -AiCliAutoAccept：cc/cx/gm 会跳过所有确认，等于把本机执行权直接交给模型'
+    Write-Warn '你开了 -AiCliAutoAccept：带跳过确认参数的命令（cc/cx/gm 等）会跳过所有确认，等于把本机执行权直接交给模型'
 }
 Write-Host ''
