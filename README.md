@@ -324,7 +324,7 @@ In real-world Windows, AI Agent, Obsidian, and personal-website scenarios, I tur
 - Follow updates: [Bilibili](https://space.bilibili.com/491358682/upload/video) · [YouTube](https://www.youtube.com/@dqtx760/videos) · [X](https://x.com/dqtx760)
 - WeChat official account: search "大强同学" on WeChat
 
-![Derek Zhao](https://gitee.com/da-qiang-classmate/typora/raw/master/image/未命名的设计（2）.webp)
+![WeChat official account: 大强同学](./assets/readme/wechat-qr.webp)
 
 Stuck on install, config, or errors, or want to wire AI into your own workflow? Just reach out.
 
