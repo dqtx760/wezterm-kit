@@ -1,0 +1,7 @@
+# install.ps1 覆盖配置前生成的备份，别提交
+*.bak.*
+
+# 系统垃圾
+.DS_Store
+Thumbs.db
+desktop.ini

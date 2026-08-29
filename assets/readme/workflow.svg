@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="290" viewBox="0 0 1200 290" role="img" aria-labelledby="wfTitle wfDesc">
+  <title id="wfTitle">install.ps1 的五个阶段</title>
+  <desc id="wfDesc">检测环境、备份旧配置、安装软件与字体、生成配置、跑验收，每一步都会打印结果。</desc>
+
+  <defs>
+    <marker id="wfArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1 L8 5 L2 9" fill="none" stroke="#3A4149" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="290" rx="20" fill="#0E1116"/>
+  <rect x="0.5" y="0.5" width="1199" height="289" rx="20" fill="none" stroke="#23282F"/>
+
+  <text x="56" y="56" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" fill="#7D8590" letter-spacing="1">装一次机，脚本依次做这五件事</text>
+
+  <g id="connectors" stroke="#3A4149" stroke-width="2" marker-end="url(#wfArrow)">
+    <line x1="182" y1="138" x2="346" y2="138"/>
+    <line x1="406" y1="138" x2="570" y2="138"/>
+    <line x1="630" y1="138" x2="794" y2="138"/>
+    <line x1="854" y1="138" x2="1018" y2="138"/>
+  </g>
+
+  <g id="steps">
+    <circle cx="152" cy="138" r="26" fill="#16202E" stroke="#4C8DFF" stroke-width="2"/>
+    <circle cx="376" cy="138" r="26" fill="#16202E" stroke="#4C8DFF" stroke-width="2"/>
+    <circle cx="600" cy="138" r="26" fill="#16202E" stroke="#4C8DFF" stroke-width="2"/>
+    <circle cx="824" cy="138" r="26" fill="#16202E" stroke="#4C8DFF" stroke-width="2"/>
+    <circle cx="1048" cy="138" r="26" fill="#16202E" stroke="#3FB950" stroke-width="2"/>
+  </g>
+
+  <g id="step-numbers" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" text-anchor="middle" fill="#4C8DFF">
+    <text x="152" y="146">1</text>
+    <text x="376" y="146">2</text>
+    <text x="600" y="146">3</text>
+    <text x="824" y="146">4</text>
+    <text x="1048" y="146" fill="#3FB950">5</text>
+  </g>
+
+  <g id="step-labels" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" text-anchor="middle">
+    <text x="152" y="196" font-size="21" fill="#E6EDF3">检测环境</text>
+    <text x="376" y="196" font-size="21" fill="#E6EDF3">备份旧配置</text>
+    <text x="600" y="196" font-size="21" fill="#E6EDF3">装软件和字体</text>
+    <text x="824" y="196" font-size="21" fill="#E6EDF3">生成配置</text>
+    <text x="1048" y="196" font-size="21" fill="#E6EDF3">跑验收</text>
+
+    <text x="152" y="222" font-size="18" fill="#7D8590">扫一遍本机状态</text>
+    <text x="376" y="222" font-size="18" fill="#7D8590">存 .bak.时间戳</text>
+    <text x="600" y="222" font-size="18" fill="#7D8590">winget + GitHub</text>
+    <text x="824" y="222" font-size="18" fill="#7D8590">模板替换 + 注入</text>
+    <text x="1048" y="222" font-size="18" fill="#7D8590">13 项逐条检查</text>
+  </g>
+</svg>

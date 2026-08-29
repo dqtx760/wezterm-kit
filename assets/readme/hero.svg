@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="heroTitle heroDesc">
+  <title id="heroTitle">wezterm-kit — Windows 终端环境一键装机</title>
+  <desc id="heroDesc">左侧为项目名与一句话说明，右侧为装完之后 verify.ps1 的真实验收输出，13 项全部通过。</desc>
+
+  <rect width="1200" height="340" rx="20" fill="#0E1116"/>
+  <rect x="0.5" y="0.5" width="1199" height="339" rx="20" fill="none" stroke="#23282F"/>
+
+  <g id="title-block" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Microsoft YaHei, sans-serif">
+    <text x="56" y="86" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" fill="#7D8590" letter-spacing="2">Windows 终端环境 · 一键装机</text>
+    <text x="56" y="152" font-size="60" font-weight="700" fill="#E6EDF3">wezterm-kit</text>
+    <text x="56" y="192" font-size="21" fill="#A9B4C0">一行命令装好 WezTerm + Nushell + Starship + Nerd Font</text>
+    <text x="56" y="222" font-size="21" fill="#A9B4C0">背景图、配色、快捷键、AI CLI 快捷命令全部配好</text>
+  </g>
+
+  <g id="meta-chips" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" fill="#A9B4C0">
+    <rect x="56" y="244" width="168" height="34" rx="17" fill="#161B22" stroke="#2A313C"/>
+    <text x="140" y="266" text-anchor="middle">Windows 10/11</text>
+    <rect x="236" y="244" width="100" height="34" rx="17" fill="#161B22" stroke="#2A313C"/>
+    <text x="286" y="266" text-anchor="middle">免管理员</text>
+    <rect x="348" y="244" width="147" height="34" rx="17" fill="#161B22" stroke="#2A313C"/>
+    <text x="421" y="266" text-anchor="middle">MIT License</text>
+  </g>
+
+  <g id="proof-terminal">
+    <rect x="684" y="48" width="460" height="244" rx="14" fill="#161B22" stroke="#2A313C"/>
+    <circle cx="706" cy="78" r="5" fill="#FF5F57"/>
+    <circle cx="726" cy="78" r="5" fill="#FEBC2E"/>
+    <circle cx="746" cy="78" r="5" fill="#28C840"/>
+    <text x="914" y="83" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" fill="#7D8590">verify.ps1</text>
+
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" fill="#A9B4C0">
+      <text x="704" y="128" fill="#7D8590">[ 软件 ]</text>
+      <text x="704" y="154"><tspan fill="#3FB950">[OK]</tspan>   WezTerm 已安装</text>
+      <text x="704" y="180"><tspan fill="#3FB950">[OK]</tspan>   Nushell 已安装</text>
+      <text x="704" y="206"><tspan fill="#3FB950">[OK]</tspan>   Starship 已安装</text>
+      <text x="704" y="232" fill="#7D8590">[ 字体 ]</text>
+      <text x="704" y="258"><tspan fill="#3FB950">[OK]</tspan>   Nerd Font 已就位</text>
+      <text x="704" y="284" fill="#3FB950">全部通过（13 项）</text>
+    </g>
+    <rect x="878" y="268" width="11" height="20" fill="#4C8DFF"/>
+  </g>
+</svg>
